@@ -50,4 +50,3 @@ The challenge was to create an engaging CSS animation effect for a box element t
 ## Acknowledgments
 
 Special thanks to [IT Programmer](https://www.youtube.com/@itprogrammer01) for providing the inspiration and resources for this project.
-
