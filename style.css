@@ -1,0 +1,59 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Setting default font family */
+}
+
+/* Styling the body element */
+body {
+    display: flex; /* Displaying body as a flex container */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    min-height: 100vh; /* Setting minimum height to 100% of viewport height */
+    background-color: rgb(4, 75, 97); /* Setting background color to dark blue */
+}
+
+/* Styling the box element */
+.box {
+    position: relative; /* Positioning relative to its container */
+    width: 300px; /* Setting fixed width */
+    height: 400px; /* Setting fixed height */
+    display: flex; /* Displaying box as a flex container */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    background-color: rgb(0, 0, 0); /* Setting background color to black */
+    overflow: hidden; /* Hiding overflow content */
+    border-radius: 20px; /* Setting border radius for rounded corners */
+}
+
+/* Styling the highlight effect */
+.box::before {
+    content: ""; /* Adding content before the box */
+    position: absolute; /* Positioning absolutely within the box */
+    width: 180px; /* Setting width of highlight effect */
+    height: 140%; /* Setting height relative to box's height */
+    background-color: white; /* Setting background color to white */
+    box-shadow: 0 0 20px rgb(8, 8, 8); /* Adding box shadow for glowing effect */
+    animation: animate 4s linear infinite; /* Applying animation effect */
+}
+
+/* Styling the inner border effect */
+.box::after {
+    content: ""; /* Adding content after the box */
+    position: absolute; /* Positioning absolutely within the box */
+    inset: 10px; /* Setting distance from all edges */
+    background-color: rgb(4, 75, 97); /* Setting background color to dark blue */
+    border-radius: 16px; /* Setting border radius for rounded corners */
+}
+
+/* Defining animation */
+@keyframes animate {
+    0% {
+        transform: rotate(0deg); /* Starting rotation angle */
+    }
+    100% {
+        transform: rotate(360deg); /* Ending rotation angle */
+    }
+}
