@@ -22,7 +22,7 @@ The challenge was to create an engaging CSS animation effect for a box element t
 
 ### Demo
 
-[View Demo](#) (Replace with the link to your live demo if available)
+[View Demo](#) (Coming soon)
 
 ### Links
 
